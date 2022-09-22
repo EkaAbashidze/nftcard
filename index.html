@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NFT Preview Card</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #0d192c;
+      }
+
+      .box {
+        background-color: #15263f;
+        width: 350px;
+        border-radius: 15px;
+        padding: 24px;
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      h1,
+      h4 {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-family: Outfit;
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 16px;
+        margin-top: 24px;
+      }
+
+      h1:hover,
+      h4:hover {
+        cursor: pointer;
+        color: #00fff8;
+      }
+
+      h4 {
+        color: white;
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      p {
+        color: #8bacd9;
+        font-family: Outfit;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        color: #8bacd9;
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      h2 {
+        color: #00fff8;
+        font-family: Outfit;
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 6.49px;
+      }
+
+      .avatar {
+        box-sizing: border-box;
+        border: 1px solid white;
+        border-radius: 50%;
+        max-width: 33px;
+      }
+
+      .equi {
+        position: relative;
+      }
+
+      .hover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgb(0 255 248 / 50%);
+        border-radius: 8px;
+        left: 0;
+        opacity: 0;
+      }
+
+      .hover:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      .eye {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .eth,
+      .days {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .creator {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        margin-bottom: 17px;
+      }
+
+      .three {
+        margin-left: 9.03px;
+      }
+
+      .creation {
+        margin-left: 16px;
+        margin-right: 5px;
+      }
+
+      #rectangle {
+        width: 302px;
+        height: 1px;
+        background: #2e405a;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="photo" style="position: relative;">
+        <img class="equi" src="./image-equilibrium.jpg" />
+
+        <div class="hover">
+          <img class="eye" src="./icon-view.svg" />
+        </div>
+      </div>
+
+      <h1>Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="container">
+        <div class="eth">
+          <img src="./icon-ethereum.svg" />
+          <h2>0.041 ETH</h2>
+        </div>
+        <div class="days">
+          <img src="./icon-clock.svg" />
+          <h3 class="three">3 days left</h3>
+        </div>
+      </div>
+
+      <div id="rectangle"></div>
+
+      <div class="creator">
+        <img class="avatar" src="./image-avatar.png" />
+        <h3 class="creation">Creation of</h3>
+        <h4>Jules Wyvern</h4>
+      </div>
+    </div>
+  </body>
+</html>
